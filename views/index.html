@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Zoo</title>
+    <script type="text/javascript" src="vendors/angular.min.js"></script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+    <link rel="stylesheet" href="css/stylesheet.css" media="screen" title="no title" charset="utf-8">
+  </head>
+  <body>
+    <div ng-controller='zooController' class="container">
+      <h1>The Angular Zoo</h1>
+      <form>
+        <label for="newAnimal">Add an animal into the Angular Zoo!</label>
+        <input type="text" name="newAnimal" ng-model="newAnimal" placeholder="enter a new animal">
+        <button type="button" name="button" ng-click='addAnimal();'>Add Animal</button>
+      </form>
+      <table id="zooTable">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>type</th>
+            <th>count</th>
+          </tr>
+        </thead>
+      <tbody>
+        <tr ng-repeat="record in allTheAnimals">
+          <td> {{ record.id }} </td>
+          <td> {{ record.type }} </td>
+          <td> {{ record.count }} </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

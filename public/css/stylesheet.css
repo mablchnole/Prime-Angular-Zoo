@@ -1,0 +1,92 @@
+body {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  padding: 2px 60px;
+  background-color: #7d6652;
+  color: #22180e;
+}
+
+.container {
+  margin: 30px 0;
+  padding: 10px 30px;
+  background-color: #f0e9d0;
+}
+
+h1 {
+  background-color: #3a562f;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+form {
+  margin: 20px 0;
+  text-align: center;
+}
+
+label {
+  font-size: 16px;
+  margin: 0 10px;
+}
+
+#zooTable {
+  font-size: 12px;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+}
+
+#zooTable th {
+  font-size: 13px;
+  font-weight: normal;
+  background-color: #3a562f;
+  border-top: 4px solid #7d6652;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  padding: 8px;
+}
+
+#zooTable td {
+  background: #dfd6b3;
+  border-bottom: 1px solid #fff;
+  color: #000;
+  border-top: 1px solid transparent;
+  padding: 8px;
+}
+
+
+input[type="text"] {
+  border: 2px solid #3a562f;
+  color: #3a562f;
+  line-height: 1.467;
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: none;
+  background-color: #f0e9d0;
+}
+
+button {
+    background-color: #3a562f;
+    border: none;
+    color: white;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+  background-color: #7d6652;
+}
+
+.submit {
+  line-height: 1.467;
+  padding: 8px 12px;
+}
