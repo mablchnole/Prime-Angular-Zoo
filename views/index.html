@@ -10,9 +10,9 @@
   <body>
     <div ng-controller='zooController' class="container">
       <h1>The Angular Zoo</h1>
-      <form>
+      <form name="inputForm">
         <label for="newAnimal">Add an animal into the Angular Zoo!</label>
-        <input type="text" name="newAnimal" ng-model="newAnimal" placeholder="enter a new animal">
+        <input type="text" name="newAnimal" ng-model="newAnimal" placeholder="enter a new animal" clear-input>
         <button type="button" name="button" ng-click='addAnimal();'>Add Animal</button>
       </form>
       <table id="zooTable">
@@ -23,13 +23,14 @@
             <th>count</th>
           </tr>
         </thead>
-      <tbody>
-        <tr ng-repeat="record in allTheAnimals">
-          <td> {{ record.id }} </td>
-          <td> {{ record.type }} </td>
-          <td> {{ record.count }} </td>
-        </tr>
-      </tbody>
-    </table>
+        <tbody>
+          <tr ng-repeat="record in allTheAnimals">
+            <td> {{ record.id }} </td>
+            <td> {{ record.type }} </td>
+            <td> {{ record.count }} </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </body>
 </html>

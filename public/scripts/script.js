@@ -1,5 +1,13 @@
 var myApp=angular.module('myApp', []);
 
+
+//  myApp.controller("zooController", function($scope, $window) {
+// $window.onload = function() {
+//  $scope.addAnimal();
+// };
+// });
+
+
 myApp.controller('zooController', ['$scope', '$http', function($scope, $http){
   $scope.allTheAnimals = [];
   $scope.addAnimal = function(){
@@ -19,5 +27,12 @@ myApp.controller('zooController', ['$scope', '$http', function($scope, $http){
       console.log(response.statusText);
     }); // end post call
     console.log('back from POST call');
+
+    // Reset the form model.
+inputForm = {};
+// Set back to pristine.
+inputForm.$setPristine();
+// Since Angular 1.3, set back to untouched state.
+inputForm.$setUntouched();
   }; // end addAnimal function
 }]);//end of controller
